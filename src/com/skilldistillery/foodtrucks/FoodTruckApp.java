@@ -35,6 +35,7 @@ public class FoodTruckApp {
 				keepMenu = false;
 				break;
 			}
+			System.out.println("Thank you for using the Food Truck App");
 
 		}
 

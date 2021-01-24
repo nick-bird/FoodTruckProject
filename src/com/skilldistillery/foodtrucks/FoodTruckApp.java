@@ -102,8 +102,7 @@ public class FoodTruckApp {
 
 		}
 		System.out.println("The highest rated Food Truck: ");
-		System.out.println("Number ID: " + trucks[count].getNumID() + " Name: " + trucks[count].getName()
-				+ " Food Type: " + trucks[count].getFoodType() + " Rating: " + trucks[count].getRating());
+		System.out.println(trucks[count].toString());
 		System.out.println();
 	}
 

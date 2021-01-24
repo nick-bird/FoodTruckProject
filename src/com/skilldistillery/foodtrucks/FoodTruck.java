@@ -1,23 +1,16 @@
 package com.skilldistillery.foodtrucks;
 
 public class FoodTruck {
-	
-	private static int nextTruck = 0;
-
+	private static int trucksAdded = 0;
 	private int numID = 0;
 	private String name = "";
 	private String foodType = "";
 	private int rating = 0;
-//int numberID, String name, String foodType, int rating
+//increments static int in constructor, and assigns it to the new truck
 	public FoodTruck() {
-//		
+		trucksAdded++;
+		setNumID(trucksAdded);
 	}
-	
-	
-//	public FoodTruck(String name, String foodType, int rating) {
-//		this(numberID, name, foodType, rating);
-//	}
-
 
 	public int getNumID() {
 		return numID;
@@ -50,15 +43,9 @@ public class FoodTruck {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
-
-
-	@Override
 	public String toString() {
-		return "FoodTruck [numID=" + numID + ", name=" + name + 
-				", foodType=" + foodType + ", rating=" + rating + "]";
+		String s = "Number ID: " + this.getNumID() + " Name: " + this.getName() + " Food Type: "
+				+ this.getFoodType() + " Rating: " + this.getRating();
+				return s;
 	}
-
-	
-	
-
 }
